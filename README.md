@@ -67,11 +67,11 @@
 ### 🔭 Recent activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#8](https://github.com/chandhim/FraudX/pull/8) in [chandhim/FraudX](https://github.com/chandhim/FraudX)
-2. 💪 Opened PR [#8](https://github.com/chandhim/FraudX/pull/8) in [chandhim/FraudX](https://github.com/chandhim/FraudX)
-3. 🎉 Merged PR [#7](https://github.com/chandhim/FraudX/pull/7) in [chandhim/FraudX](https://github.com/chandhim/FraudX)
-4. 🎉 Merged PR [#1](https://github.com/chandhim/MyPortfolio-backend/pull/1) in [chandhim/MyPortfolio-backend](https://github.com/chandhim/MyPortfolio-backend)
-5. 💪 Opened PR [#1](https://github.com/chandhim/MyPortfolio-backend/pull/1) in [chandhim/MyPortfolio-backend](https://github.com/chandhim/MyPortfolio-backend)
+1. 🎉 Merged PR [#1](https://github.com/chandhim/chandhim/pull/1) in [chandhim/chandhim](https://github.com/chandhim/chandhim)
+2. 💪 Opened PR [#1](https://github.com/chandhim/chandhim/pull/1) in [chandhim/chandhim](https://github.com/chandhim/chandhim)
+3. 🎉 Merged PR [#8](https://github.com/chandhim/FraudX/pull/8) in [chandhim/FraudX](https://github.com/chandhim/FraudX)
+4. 💪 Opened PR [#8](https://github.com/chandhim/FraudX/pull/8) in [chandhim/FraudX](https://github.com/chandhim/FraudX)
+5. 🎉 Merged PR [#7](https://github.com/chandhim/FraudX/pull/7) in [chandhim/FraudX](https://github.com/chandhim/FraudX)
 <!--END_SECTION:activity-->
 
 ### ✍️ Latest posts
