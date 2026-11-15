@@ -1,0 +1,35 @@
+name: Update README
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 6 hours
+  workflow_dispatch:         # manual "Run workflow" button
+
+permissions:
+  contents: write
+
+jobs:
+  recent-activity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          GH_USERNAME: ${{ github.repository_owner }}
+          MAX_LINES: 6
+          COMMIT_MSG: "chore: update recent activity"
+
+  blog-posts:
+    needs: recent-activity
+    # Only runs once you set a repo variable BLOG_RSS (Settings → Secrets and variables → Actions → Variables)
+    if: ${{ vars.BLOG_RSS != '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: ${{ vars.BLOG_RSS }}
+          max_post_count: 5
+          commit_message: "chore: update blog posts"
