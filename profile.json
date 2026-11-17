@@ -1,0 +1,15 @@
+{
+  "username": "chandhim",
+
+  "_comment_extra": "Tools that can't be detected from code (editors, design apps, OS). Use ids from https://github.com/tandpfun/skill-icons#icons-list",
+  "extra_stack": ["git", "github", "vscode", "figma", "linux", "postman"],
+
+  "_comment_hide": "Anything auto-detected that you don't want shown",
+  "hide_stack": [],
+
+  "_comment_langs": "Languages to leave out of the stats language bar",
+  "exclude_languages": [],
+
+  "include_private": false,
+  "activity_lines": 6
+}
