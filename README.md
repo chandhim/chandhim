@@ -16,32 +16,32 @@
 
 ---
 
-### Hi, I'm Manula 👋
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/user.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/user.svg?color=%237c3aed" width="20" height="20" align="center" /></picture> Hi, I'm Manula
 
 I'm an **Information Technology undergraduate** at **Uva Wellassa University of Sri Lanka** 🇱🇰. I enjoy turning ideas into working software, from clean user interfaces to the backend logic and databases behind them, and I learn best by building real projects.
 
-- 🎓 &nbsp;Studying **Information Technology** at **Uva Wellassa University of Sri Lanka**
-- 🔭 &nbsp;Working on **university and personal projects**: web apps, APIs and system design exercises
-- 🌱 &nbsp;Learning **full-stack development**, **cloud basics** and writing cleaner, testable code
-- 💡 &nbsp;Interested in **web development**, **software architecture** and **developer tools**
-- 🤝 &nbsp;Open to **internships**, **collaborations** and **open-source contributions**
-- 📫 &nbsp;Reach me on **[LinkedIn](https://www.linkedin.com/in/manula-chandupa-4049862ba)** or via **[Email](mailto:iit22011@std.uwu.ac.lk)**
+- <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/graduation-cap.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/graduation-cap.svg?color=%237c3aed" width="16" height="16" align="center" /></picture> &nbsp;Studying **Information Technology** at **Uva Wellassa University of Sri Lanka**
+- <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/laptop.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/laptop.svg?color=%237c3aed" width="16" height="16" align="center" /></picture> &nbsp;Working on **university and personal projects**: web apps, APIs and system design exercises
+- <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/layers.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/layers.svg?color=%237c3aed" width="16" height="16" align="center" /></picture> &nbsp;Learning **full-stack development**, **cloud basics** and writing cleaner, testable code
+- <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/lightbulb.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/lightbulb.svg?color=%237c3aed" width="16" height="16" align="center" /></picture> &nbsp;Interested in **web development**, **software architecture** and **developer tools**
+- <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/handshake.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/handshake.svg?color=%237c3aed" width="16" height="16" align="center" /></picture> &nbsp;Open to **internships**, **collaborations** and **open-source contributions**
+- <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/mail.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/mail.svg?color=%237c3aed" width="16" height="16" align="center" /></picture> &nbsp;Reach me on **[LinkedIn](https://www.linkedin.com/in/manula-chandupa-4049862ba)** or via **[Email](mailto:iit22011@std.uwu.ac.lk)**
 
 ---
 
-### 🛠️ Featured Projects
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/folder-git-2.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/folder-git-2.svg?color=%237c3aed" width="20" height="20" align="center" /></picture> Featured Projects
 
 | Project | Description | Tech Stack | Links |
 | :--- | :--- | :--- | :---: |
-| 🛋️ **[LIMATA](https://github.com/chandhim/LIMATA-One-Click-Furniture-Store)** | AI-assisted furniture e-commerce platform with 3D/AR visualization, YOLOv8 object detection, and MiDaS depth estimation. | `Python` `TypeScript` `YOLOv8` `3D/AR` | [Repository](https://github.com/chandhim/LIMATA-One-Click-Furniture-Store) |
-| 🎓 **[UniWiz](https://github.com/chandhim/UniWiz_Parttime)** | Dedicated university part-time job portal connecting university students with campus and flexible local jobs. | `PHP` `JavaScript` `PostgreSQL` `Docker` | [Repository](https://github.com/chandhim/UniWiz_Parttime) |
-| 🛡️ **[FraudX](https://github.com/chandhim/FraudX)** | Credit card fraud detection system utilizing machine learning classifiers trained on transaction behaviors. | `Python` `Scikit-Learn` `Jupyter` | [Repository](https://github.com/chandhim/FraudX) |
-| ⏱️ **[SprintPulse](https://github.com/chandhim/sprintpulse)** | Privacy-first Chrome extension turning Jira Cloud & Trello sprints into one-click executive RAG status reports. | `JavaScript` `Chrome Extensions` `CSS` | [Repository](https://github.com/chandhim/sprintpulse) |
-| 🛒 **[POS System](https://github.com/chandhim/POS)** | Retail Point of Sale software engineered for quick billing, stock control, and comprehensive checkout flows. | `TypeScript` `Node.js` `PostgreSQL` | [Repository](https://github.com/chandhim/POS) |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/armchair.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/armchair.svg?color=%237c3aed" width="16" height="16" align="center" /></picture> **[LIMATA](https://github.com/chandhim/LIMATA-One-Click-Furniture-Store)** | AI-assisted furniture e-commerce platform with 3D/AR visualization, YOLOv8 object detection, and MiDaS depth estimation. | `Python` `TypeScript` `YOLOv8` `3D/AR` | [Repository](https://github.com/chandhim/LIMATA-One-Click-Furniture-Store) |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/briefcase.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/briefcase.svg?color=%237c3aed" width="16" height="16" align="center" /></picture> **[UniWiz](https://github.com/chandhim/UniWiz_Parttime)** | Dedicated university part-time job portal connecting university students with campus and flexible local jobs. | `PHP` `JavaScript` `PostgreSQL` `Docker` | [Repository](https://github.com/chandhim/UniWiz_Parttime) |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/shield-alert.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/shield-alert.svg?color=%237c3aed" width="16" height="16" align="center" /></picture> **[FraudX](https://github.com/chandhim/FraudX)** | Credit card fraud detection system utilizing machine learning classifiers trained on transaction behaviors. | `Python` `Scikit-Learn` `Jupyter` | [Repository](https://github.com/chandhim/FraudX) |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/gauge.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/gauge.svg?color=%237c3aed" width="16" height="16" align="center" /></picture> **[SprintPulse](https://github.com/chandhim/sprintpulse)** | Privacy-first Chrome extension turning Jira Cloud & Trello sprints into one-click executive RAG status reports. | `JavaScript` `Chrome Extensions` `CSS` | [Repository](https://github.com/chandhim/sprintpulse) |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/shopping-cart.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/shopping-cart.svg?color=%237c3aed" width="16" height="16" align="center" /></picture> **[POS System](https://github.com/chandhim/POS)** | Retail Point of Sale software engineered for quick billing, stock control, and comprehensive checkout flows. | `TypeScript` `Node.js` `PostgreSQL` | [Repository](https://github.com/chandhim/POS) |
 
 ---
 
-### 🧰 Tech Stack
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/cpu.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/cpu.svg?color=%237c3aed" width="20" height="20" align="center" /></picture> Tech Stack
 
 <!--STACK:START-->
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=html%2Cpy%2Cc%2Cts%2Cjs%2Cphp%2Ccss%2Ccpp%2Cjava%2Cbash%2Cswift%2Cpowershell%2Cdart%2Cruby&amp;theme=dark" /><img alt="html,py,c,ts,js,php,css,cpp,java,bash,swift,powershell,dart,ruby" src="https://skillicons.dev/icons?i=html,py,c,ts,js,php,css,cpp,java,bash,swift,powershell,dart,ruby&amp;theme=light" /></picture><br/>
@@ -53,7 +53,7 @@ I'm an **Information Technology undergraduate** at **Uva Wellassa University of 
 
 ---
 
-### 📊 GitHub Stats
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/bar-chart-2.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/bar-chart-2.svg?color=%237c3aed" width="20" height="20" align="center" /></picture> GitHub Stats
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/stats-dark.svg" />
@@ -62,20 +62,20 @@ I'm an **Information Technology undergraduate** at **Uva Wellassa University of 
 
 ---
 
-### 🔭 Recent Activity
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/activity.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/activity.svg?color=%237c3aed" width="20" height="20" align="center" /></picture> Recent Activity
 
 <!--ACTIVITY:START-->
-- ⬆️ Pushed to [chandhim/chandhim](https://github.com/chandhim/chandhim) <sub>· Nov 18</sub>
-- 🔀 Merged PR [#2](https://github.com/chandhim/chandhim/pull/2) in [chandhim/chandhim](https://github.com/chandhim/chandhim) <sub>· Nov 18</sub>
-- 🔃 Opened PR [#2](https://github.com/chandhim/chandhim/pull/2) in [chandhim/chandhim](https://github.com/chandhim/chandhim) <sub>· Nov 18</sub>
-- ⬆️ Pushed to [chandhim/chandhim](https://github.com/chandhim/chandhim) <sub>· Nov 17</sub>
-- 🔀 Merged PR [#2](https://github.com/chandhim/UniWiz_Parttime/pull/2) in [chandhim/UniWiz_Parttime](https://github.com/chandhim/UniWiz_Parttime) <sub>· Nov 18</sub>
-- 🔃 Opened PR [#2](https://github.com/chandhim/UniWiz_Parttime/pull/2) in [chandhim/UniWiz_Parttime](https://github.com/chandhim/UniWiz_Parttime) <sub>· Nov 18</sub>
+- <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/git-commit.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/git-commit.svg?color=%237c3aed" width="14" height="14" align="center" /></picture> Pushed to [chandhim/chandhim](https://github.com/chandhim/chandhim) <sub>· Nov 18</sub>
+- <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/git-merge.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/git-merge.svg?color=%237c3aed" width="14" height="14" align="center" /></picture> Merged PR [#2](https://github.com/chandhim/chandhim/pull/2) in [chandhim/chandhim](https://github.com/chandhim/chandhim) <sub>· Nov 18</sub>
+- <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/git-pull-request.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/git-pull-request.svg?color=%237c3aed" width="14" height="14" align="center" /></picture> Opened PR [#2](https://github.com/chandhim/chandhim/pull/2) in [chandhim/chandhim](https://github.com/chandhim/chandhim) <sub>· Nov 18</sub>
+- <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/git-commit.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/git-commit.svg?color=%237c3aed" width="14" height="14" align="center" /></picture> Pushed to [chandhim/chandhim](https://github.com/chandhim/chandhim) <sub>· Nov 17</sub>
+- <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/git-merge.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/git-merge.svg?color=%237c3aed" width="14" height="14" align="center" /></picture> Merged PR [#2](https://github.com/chandhim/UniWiz_Parttime/pull/2) in [chandhim/UniWiz_Parttime](https://github.com/chandhim/UniWiz_Parttime) <sub>· Nov 18</sub>
+- <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/git-pull-request.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/git-pull-request.svg?color=%237c3aed" width="14" height="14" align="center" /></picture> Opened PR [#2](https://github.com/chandhim/UniWiz_Parttime/pull/2) in [chandhim/UniWiz_Parttime](https://github.com/chandhim/UniWiz_Parttime) <sub>· Nov 18</sub>
 <!--ACTIVITY:END-->
 
 <br/>
 
-### 🐍 Contribution Activity
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.iconify.design/lucide/git-commit.svg?color=%23a78bfa" /><img src="https://api.iconify.design/lucide/git-commit.svg?color=%237c3aed" width="20" height="20" align="center" /></picture> Contribution Activity
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/chandhim/chandhim/output/snake-dark.svg" />

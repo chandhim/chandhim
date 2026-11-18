@@ -372,6 +372,11 @@ def stats_svg(stats, theme):
             + "".join(out) + "</svg>\n")
 
 # ---------------------------------------------------------------------- activity
+def lucide(name, size=14):
+    dark = f"https://api.iconify.design/lucide/{name}.svg?color=%23a78bfa"
+    light = f"https://api.iconify.design/lucide/{name}.svg?color=%237c3aed"
+    return f'<picture><source media="(prefers-color-scheme: dark)" srcset="{dark}" /><img src="{light}" width="{size}" height="{size}" align="center" /></picture>'
+
 def activity_md(events):
     lines, seen = [], set()
     for e in events:
@@ -397,44 +402,48 @@ def activity_md(events):
                     and x.get("created_at", "")[:10] == created_at]
             sizes = [x.get("payload", {}).get("size") for x in same]
             n = sum(s for s in sizes if isinstance(s, int)) if any(isinstance(s, int) for s in sizes) else None
-            text = f"⬆️ Pushed {n} commit{'s' if n != 1 else ''} to {link}" if n else f"⬆️ Pushed to {link}"
+            text = f"{lucide('git-commit')} Pushed {n} commit{'s' if n != 1 else ''} to {link}" if n else f"{lucide('git-commit')} Pushed to {link}"
         elif typ == "CreateEvent" and p.get("ref_type") == "repository":
-            text = f"🆕 Created repository {link}"
+            text = f"{lucide('folder-plus')} Created repository {link}"
         elif typ == "PullRequestEvent" and p.get("action") in ("opened", "closed", "merged"):
             pr = p.get("pull_request") or {}
             action = p.get("action")
             if action == "closed" and not pr.get("merged"):
                 continue
-            verb = "🔀 Merged" if (action == "merged" or pr.get("merged")) else "🔃 Opened"
+            is_merged = (action == "merged" or pr.get("merged"))
+            verb = "Merged" if is_merged else "Opened"
+            icon = "git-merge" if is_merged else "git-pull-request"
             pr_num = pr.get("number") or p.get("number") or ""
             key = ("pr", repo, pr_num, verb)
             if key in seen:
                 continue
             seen.add(key)
             pr_url = pr.get("html_url") or f"https://github.com/{repo}/pull/{pr_num}"
-            text = f"{verb} PR [#{pr_num}]({pr_url}) in {link}"
+            text = f"{lucide(icon)} {verb} PR [#{pr_num}]({pr_url}) in {link}"
         elif typ == "IssuesEvent" and p.get("action") in ("opened", "closed"):
             iss = p.get("issue") or {}
             action = p.get("action")
-            verb = "✅ Closed" if action == "closed" else "❗ Opened"
+            is_closed = (action == "closed")
+            verb = "Closed" if is_closed else "Opened"
+            icon = "check-circle-2" if is_closed else "alert-circle"
             iss_num = iss.get("number") or p.get("number") or ""
             key = ("issue", repo, iss_num, verb)
             if key in seen:
                 continue
             seen.add(key)
             iss_url = iss.get("html_url") or f"https://github.com/{repo}/issues/{iss_num}"
-            text = f"{verb} issue [#{iss_num}]({iss_url}) in {link}"
+            text = f"{lucide(icon)} {verb} issue [#{iss_num}]({iss_url}) in {link}"
         elif typ == "ReleaseEvent" and p.get("action") == "published":
             rel = p.get("release") or {}
             tag = rel.get("tag_name") or "release"
             rel_url = rel.get("html_url") or f"https://github.com/{repo}/releases/tag/{tag}"
-            text = f"🚀 Released [`{tag}`]({rel_url}) in {link}"
+            text = f"{lucide('tag')} Released [`{tag}`]({rel_url}) in {link}"
         elif typ == "WatchEvent":
-            text = f"⭐ Starred {link}"
+            text = f"{lucide('star')} Starred {link}"
         elif typ == "ForkEvent":
-            text = f"🍴 Forked {link}"
+            text = f"{lucide('git-fork')} Forked {link}"
         elif typ == "PublicEvent":
-            text = f"🌍 Made {link} public"
+            text = f"{lucide('globe')} Made {link} public"
         else:
             continue
         lines.append(f"- {text}{when_str}")
