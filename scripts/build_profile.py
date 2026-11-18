@@ -205,31 +205,50 @@ def detect_stack(data):
     for extra in CFG.get("extra_stack", []):
         if extra not in other and extra not in langs and extra not in hide:
             other.append(extra)
-    out = []
-    for title, members in GROUPS:
-        if title == "Languages":
-            items = langs
-        elif members is None:
-            taken = set().union(*(m for _, m in GROUPS if m))
-            items = [i for i in other if i not in taken]
-        else:
-            items = [i for i in other if i in members]
-        if items:
-            out.append((title, items))
-    return out
+    if CFG.get("divide_stack", False):
+        out = []
+        for title, members in GROUPS:
+            if title == "Languages":
+                items = langs
+            elif members is None:
+                taken = set().union(*(m for _, m in GROUPS if m))
+                items = [i for i in other if i not in taken]
+            else:
+                items = [i for i in other if i in members]
+            if items:
+                out.append((title, items))
+        return out
+    else:
+        combined = []
+        for i in langs + other:
+            if i not in combined and i not in hide:
+                combined.append(i)
+        return combined
 
 def stack_md(groups):
     if not groups:
         return "_Nothing detected yet._"
-    rows = []
-    for title, items in groups:
-        ids = ",".join(items)
+    if isinstance(groups, list) and groups and isinstance(groups[0], tuple):
+        rows = []
+        for title, items in groups:
+            ids = ",".join(items)
+            base = f"https://skillicons.dev/icons?i={ids}&perline=14"
+            rows.append(
+                f"<b>{title}</b><br/>\n"
+                f'<picture><source media="(prefers-color-scheme: dark)" srcset="{base}&theme=dark" />'
+                f'<img alt="{html.escape(ids)}" src="{base}&theme=light" /></picture>')
+        return "\n<br/><br/>\n".join(rows)
+    else:
+        ids = ",".join(groups)
         base = f"https://skillicons.dev/icons?i={ids}&perline=14"
-        rows.append(
-            f"<b>{title}</b><br/>\n"
-            f'<picture><source media="(prefers-color-scheme: dark)" srcset="{base}&theme=dark" />'
-            f'<img alt="{html.escape(ids)}" src="{base}&theme=light" /></picture>')
-    return "\n<br/><br/>\n".join(rows)
+        return (
+            f'<p align="center">\n'
+            f'  <picture>\n'
+            f'    <source media="(prefers-color-scheme: dark)" srcset="{base}&theme=dark" />\n'
+            f'    <img alt="{html.escape(ids)}" src="{base}&theme=light" />\n'
+            f'  </picture>\n'
+            f'</p>'
+        )
 
 # ------------------------------------------------------------------------- stats
 def streaks(days):

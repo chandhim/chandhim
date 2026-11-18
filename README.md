@@ -52,17 +52,12 @@
 ### 🧰 Tech Stack
 
 <!--STACK:START-->
-<b>Languages</b><br/>
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=html,py,c,ts,js,php,css,cpp,java,bash,swift,powershell,dart,ruby,kotlin&perline=14&theme=dark" /><img alt="html,py,c,ts,js,php,css,cpp,java,bash,swift,powershell,dart,ruby,kotlin" src="https://skillicons.dev/icons?i=html,py,c,ts,js,php,css,cpp,java,bash,swift,powershell,dart,ruby,kotlin&perline=14&theme=light" /></picture>
-<br/><br/>
-<b>Frameworks & libraries</b><br/>
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nodejs,react,express,electron,fastapi,flutter,nextjs,pytorch,sklearn,tailwind,threejs&perline=14&theme=dark" /><img alt="nodejs,react,express,electron,fastapi,flutter,nextjs,pytorch,sklearn,tailwind,threejs" src="https://skillicons.dev/icons?i=nodejs,react,express,electron,fastapi,flutter,nextjs,pytorch,sklearn,tailwind,threejs&perline=14&theme=light" /></picture>
-<br/><br/>
-<b>Databases & cloud</b><br/>
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=docker,githubactions,prisma,postgres,sqlite,vercel&perline=14&theme=dark" /><img alt="docker,githubactions,prisma,postgres,sqlite,vercel" src="https://skillicons.dev/icons?i=docker,githubactions,prisma,postgres,sqlite,vercel&perline=14&theme=light" /></picture>
-<br/><br/>
-<b>Tools</b><br/>
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=androidstudio,gradle,vite,git,github,vscode,figma,linux,postman&perline=14&theme=dark" /><img alt="androidstudio,gradle,vite,git,github,vscode,figma,linux,postman" src="https://skillicons.dev/icons?i=androidstudio,gradle,vite,git,github,vscode,figma,linux,postman&perline=14&theme=light" /></picture>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=html,py,c,ts,js,php,css,cpp,java,bash,swift,powershell,dart,ruby,kotlin,docker,githubactions,nodejs,react,androidstudio,express,gradle,prisma,electron,fastapi,flutter,nextjs,postgres,pytorch,sklearn,sqlite,tailwind,threejs,vercel,vite,git,github,vscode,figma,linux,postman&perline=14&theme=dark" />
+    <img alt="html,py,c,ts,js,php,css,cpp,java,bash,swift,powershell,dart,ruby,kotlin,docker,githubactions,nodejs,react,androidstudio,express,gradle,prisma,electron,fastapi,flutter,nextjs,postgres,pytorch,sklearn,sqlite,tailwind,threejs,vercel,vite,git,github,vscode,figma,linux,postman" src="https://skillicons.dev/icons?i=html,py,c,ts,js,php,css,cpp,java,bash,swift,powershell,dart,ruby,kotlin,docker,githubactions,nodejs,react,androidstudio,express,gradle,prisma,electron,fastapi,flutter,nextjs,postgres,pytorch,sklearn,sqlite,tailwind,threejs,vercel,vite,git,github,vscode,figma,linux,postman&perline=14&theme=light" />
+  </picture>
+</p>
 <!--STACK:END-->
 
 <sub><i>⚡ Automatically detected from languages, frameworks, and configuration across my repositories.</i></sub>
