@@ -16,24 +16,16 @@
 
 ---
 
-### 👨‍💻 About Me
+### Hi, I'm Manula 👋
 
-```console
-┌──(chandhim㉿github)-[~]
-└─$ whoami --verbose
+I'm an **Information Technology undergraduate** at **Uva Wellassa University of Sri Lanka** 🇱🇰. I enjoy turning ideas into working software, from clean user interfaces to the backend logic and databases behind them, and I learn best by building real projects.
 
-  Name ........ Manula Chandupa
-  Degree ...... B.Sc. in Information Technology (Undergraduate)
-  University .. Uva Wellassa University of Sri Lanka 🇱🇰
-  Focus ....... Full-Stack Web Development, System Architecture & Applied ML
-  Passions .... Building practical products, clean code & responsive UI/UX
-```
-
-- 🎓 **Information Technology Undergraduate** at **Uva Wellassa University of Sri Lanka**
-- 🔭 Experienced in building full-stack web applications, RESTful APIs, and responsive frontends
-- 💡 Passionate about **clean architecture**, **database design**, and **modern cloud technologies**
-- 🤝 Open to **internship opportunities**, **collaborative projects**, and **open-source contributions**
-- 📫 Reach me directly via **[LinkedIn](https://www.linkedin.com/in/manula-chandupa-4049862ba)** or **[Email](mailto:iit22011@std.uwu.ac.lk)**
+- 🎓 &nbsp;Studying **Information Technology** at **Uva Wellassa University of Sri Lanka**
+- 🔭 &nbsp;Working on **university and personal projects**: web apps, APIs and system design exercises
+- 🌱 &nbsp;Learning **full-stack development**, **cloud basics** and writing cleaner, testable code
+- 💡 &nbsp;Interested in **web development**, **software architecture** and **developer tools**
+- 🤝 &nbsp;Open to **internships**, **collaborations** and **open-source contributions**
+- 📫 &nbsp;Reach me on **[LinkedIn](https://www.linkedin.com/in/manula-chandupa-4049862ba)** or via **[Email](mailto:iit22011@std.uwu.ac.lk)**
 
 ---
 
