@@ -232,23 +232,26 @@ def stack_md(groups):
         rows = []
         for title, items in groups:
             ids = ",".join(items)
-            base = f"https://skillicons.dev/icons?i={ids}&perline=14"
+            enc_ids = "%2C".join(items)
             rows.append(
                 f"<b>{title}</b><br/>\n"
-                f'<picture><source media="(prefers-color-scheme: dark)" srcset="{base}&theme=dark" />'
-                f'<img alt="{html.escape(ids)}" src="{base}&theme=light" /></picture>')
+                f'<picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i={enc_ids}&amp;theme=dark" />'
+                f'<img alt="{html.escape(ids)}" src="https://skillicons.dev/icons?i={ids}&amp;theme=light" /></picture>')
         return "\n<br/><br/>\n".join(rows)
     else:
-        ids = ",".join(groups)
-        base = f"https://skillicons.dev/icons?i={ids}&perline=14"
-        return (
-            f'<p align="center">\n'
-            f'  <picture>\n'
-            f'    <source media="(prefers-color-scheme: dark)" srcset="{base}&theme=dark" />\n'
-            f'    <img alt="{html.escape(ids)}" src="{base}&theme=light" />\n'
-            f'  </picture>\n'
-            f'</p>'
-        )
+        per_line = 14
+        chunks = [groups[i:i + per_line] for i in range(0, len(groups), per_line)]
+        lines = []
+        for chunk in chunks:
+            raw_ids = ",".join(chunk)
+            enc_ids = "%2C".join(chunk)
+            lines.append(
+                f'<picture>'
+                f'<source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i={enc_ids}&amp;theme=dark" />'
+                f'<img alt="{html.escape(raw_ids)}" src="https://skillicons.dev/icons?i={raw_ids}&amp;theme=light" />'
+                f'</picture>'
+            )
+        return "<br/>\n".join(lines)
 
 # ------------------------------------------------------------------------- stats
 def streaks(days):

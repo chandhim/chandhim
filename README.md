@@ -52,12 +52,9 @@
 ### 🧰 Tech Stack
 
 <!--STACK:START-->
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=html,py,c,ts,js,php,css,cpp,java,bash,swift,powershell,dart,ruby,kotlin,docker,githubactions,nodejs,react,androidstudio,express,gradle,prisma,electron,fastapi,flutter,nextjs,postgres,pytorch,sklearn,sqlite,tailwind,threejs,vercel,vite,git,github,vscode,figma,linux,postman&perline=14&theme=dark" />
-    <img alt="html,py,c,ts,js,php,css,cpp,java,bash,swift,powershell,dart,ruby,kotlin,docker,githubactions,nodejs,react,androidstudio,express,gradle,prisma,electron,fastapi,flutter,nextjs,postgres,pytorch,sklearn,sqlite,tailwind,threejs,vercel,vite,git,github,vscode,figma,linux,postman" src="https://skillicons.dev/icons?i=html,py,c,ts,js,php,css,cpp,java,bash,swift,powershell,dart,ruby,kotlin,docker,githubactions,nodejs,react,androidstudio,express,gradle,prisma,electron,fastapi,flutter,nextjs,postgres,pytorch,sklearn,sqlite,tailwind,threejs,vercel,vite,git,github,vscode,figma,linux,postman&perline=14&theme=light" />
-  </picture>
-</p>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=html%2Cpy%2Cc%2Cts%2Cjs%2Cphp%2Ccss%2Ccpp%2Cjava%2Cbash%2Cswift%2Cpowershell%2Cdart%2Cruby&amp;theme=dark" /><img alt="html,py,c,ts,js,php,css,cpp,java,bash,swift,powershell,dart,ruby" src="https://skillicons.dev/icons?i=html,py,c,ts,js,php,css,cpp,java,bash,swift,powershell,dart,ruby&amp;theme=light" /></picture><br/>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=kotlin%2Cdocker%2Cgithubactions%2Cnodejs%2Creact%2Candroidstudio%2Cexpress%2Cgradle%2Cprisma%2Celectron%2Cfastapi%2Cflutter%2Cnextjs%2Cpostgres&amp;theme=dark" /><img alt="kotlin,docker,githubactions,nodejs,react,androidstudio,express,gradle,prisma,electron,fastapi,flutter,nextjs,postgres" src="https://skillicons.dev/icons?i=kotlin,docker,githubactions,nodejs,react,androidstudio,express,gradle,prisma,electron,fastapi,flutter,nextjs,postgres&amp;theme=light" /></picture><br/>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=pytorch%2Csklearn%2Csqlite%2Ctailwind%2Cthreejs%2Cvercel%2Cvite%2Cgit%2Cgithub%2Cvscode%2Cfigma%2Clinux%2Cpostman&amp;theme=dark" /><img alt="pytorch,sklearn,sqlite,tailwind,threejs,vercel,vite,git,github,vscode,figma,linux,postman" src="https://skillicons.dev/icons?i=pytorch,sklearn,sqlite,tailwind,threejs,vercel,vite,git,github,vscode,figma,linux,postman&amp;theme=light" /></picture>
 <!--STACK:END-->
 
 <sub><i>⚡ Automatically detected from languages, frameworks, and configuration across my repositories.</i></sub>
