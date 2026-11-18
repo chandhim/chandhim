@@ -1,35 +1,34 @@
-name: Update README
+name: Update profile
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # every 6 hours
-  workflow_dispatch:         # manual "Run workflow" button
+    - cron: "17 */6 * * *"   # every 6 hours
+  workflow_dispatch:           # "Run workflow" button
+  push:
+    branches: [main]
+    paths: [profile.json, scripts/**, .github/workflows/update-readme.yml]
 
 permissions:
   contents: write
 
-jobs:
-  recent-activity:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: jamesgeorge007/github-activity-readme@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          GH_USERNAME: ${{ github.repository_owner }}
-          MAX_LINES: 6
-          COMMIT_MSG: "chore: update recent activity"
+concurrency: update-profile
 
-  blog-posts:
-    needs: recent-activity
-    # Only runs once you set a repo variable BLOG_RSS (Settings → Secrets and variables → Actions → Variables)
-    if: ${{ vars.BLOG_RSS != '' }}
+jobs:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: gautamkrishnar/blog-post-workflow@v1
+      - uses: actions/setup-python@v5
         with:
-          feed_list: ${{ vars.BLOG_RSS }}
-          max_post_count: 5
-          commit_message: "chore: update blog posts"
+          python-version: "3.12"
+      - name: Build stats, stack and activity
+        run: python scripts/build_profile.py
+        env:
+          # Optional: add a PROFILE_TOKEN secret (classic PAT with read:user + repo) to include private work
+          GH_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md assets
+          git diff --cached --quiet || { git commit -m "chore: refresh profile"; git push; }

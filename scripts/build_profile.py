@@ -353,34 +353,60 @@ def stats_svg(stats, theme):
 def activity_md(events):
     lines, seen = [], set()
     for e in events:
-        repo = e["repo"]["name"]
+        repo = e.get("repo", {}).get("name", "")
+        if not repo:
+            continue
         link = f"[{repo}](https://github.com/{repo})"
-        p, typ = e.get("payload", {}), e["type"]
-        when = dt.datetime.strptime(e["created_at"][:10], "%Y-%m-%d").strftime("%b %-d")
+        p, typ = e.get("payload", {}), e.get("type", "")
+        created_at = e.get("created_at", "")[:10]
+        try:
+            d = dt.datetime.strptime(created_at, "%Y-%m-%d")
+            when = f"{d.strftime('%b')} {d.day}"
+        except Exception:
+            when = ""
+        when_str = f" <sub>· {when}</sub>" if when else ""
+
         if typ == "PushEvent":
-            key = ("push", repo, e["created_at"][:10])
+            key = ("push", repo, created_at)
             if key in seen:
                 continue
             seen.add(key)
-            same = [x for x in events if x["type"] == "PushEvent" and x["repo"]["name"] == repo
-                    and x["created_at"][:10] == e["created_at"][:10]]
+            same = [x for x in events if x.get("type") == "PushEvent" and x.get("repo", {}).get("name") == repo
+                    and x.get("created_at", "")[:10] == created_at]
             sizes = [x.get("payload", {}).get("size") for x in same]
-            n = sum(sizes) if all(sizes) else None
+            n = sum(s for s in sizes if isinstance(s, int)) if any(isinstance(s, int) for s in sizes) else None
             text = f"⬆️ Pushed {n} commit{'s' if n != 1 else ''} to {link}" if n else f"⬆️ Pushed to {link}"
         elif typ == "CreateEvent" and p.get("ref_type") == "repository":
             text = f"🆕 Created repository {link}"
-        elif typ == "PullRequestEvent" and p.get("action") in ("opened", "closed"):
-            pr = p["pull_request"]
-            if p["action"] == "closed" and not pr.get("merged"):
+        elif typ == "PullRequestEvent" and p.get("action") in ("opened", "closed", "merged"):
+            pr = p.get("pull_request") or {}
+            action = p.get("action")
+            if action == "closed" and not pr.get("merged"):
                 continue
-            verb = "🔀 Merged" if p["action"] == "closed" else "🔃 Opened"
-            text = f"{verb} PR [#{pr['number']}]({pr['html_url']}) in {link}"
+            verb = "🔀 Merged" if (action == "merged" or pr.get("merged")) else "🔃 Opened"
+            pr_num = pr.get("number") or p.get("number") or ""
+            key = ("pr", repo, pr_num, verb)
+            if key in seen:
+                continue
+            seen.add(key)
+            pr_url = pr.get("html_url") or f"https://github.com/{repo}/pull/{pr_num}"
+            text = f"{verb} PR [#{pr_num}]({pr_url}) in {link}"
         elif typ == "IssuesEvent" and p.get("action") in ("opened", "closed"):
-            iss = p["issue"]
-            verb = "✅ Closed" if p["action"] == "closed" else "❗ Opened"
-            text = f"{verb} issue [#{iss['number']}]({iss['html_url']}) in {link}"
+            iss = p.get("issue") or {}
+            action = p.get("action")
+            verb = "✅ Closed" if action == "closed" else "❗ Opened"
+            iss_num = iss.get("number") or p.get("number") or ""
+            key = ("issue", repo, iss_num, verb)
+            if key in seen:
+                continue
+            seen.add(key)
+            iss_url = iss.get("html_url") or f"https://github.com/{repo}/issues/{iss_num}"
+            text = f"{verb} issue [#{iss_num}]({iss_url}) in {link}"
         elif typ == "ReleaseEvent" and p.get("action") == "published":
-            text = f"🚀 Released `{p['release']['tag_name']}` in {link}"
+            rel = p.get("release") or {}
+            tag = rel.get("tag_name") or "release"
+            rel_url = rel.get("html_url") or f"https://github.com/{repo}/releases/tag/{tag}"
+            text = f"🚀 Released [`{tag}`]({rel_url}) in {link}"
         elif typ == "WatchEvent":
             text = f"⭐ Starred {link}"
         elif typ == "ForkEvent":
@@ -389,7 +415,7 @@ def activity_md(events):
             text = f"🌍 Made {link} public"
         else:
             continue
-        lines.append(f"- {text} <sub>· {when}</sub>")
+        lines.append(f"- {text}{when_str}")
         if len(lines) >= CFG.get("activity_lines", 6):
             break
     return "\n".join(lines) or "_No recent public activity._"

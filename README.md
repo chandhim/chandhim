@@ -12,7 +12,17 @@ I'm an **Information Technology undergraduate** at **Uva Wellassa University of 
 ### 🧰 Tech stack
 
 <!--STACK:START-->
-_Generating…_
+<b>Languages</b><br/>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=html,py,c,ts,js,php,css,cpp,java,bash,swift,powershell,dart,ruby,kotlin&perline=14&theme=dark" /><img alt="html,py,c,ts,js,php,css,cpp,java,bash,swift,powershell,dart,ruby,kotlin" src="https://skillicons.dev/icons?i=html,py,c,ts,js,php,css,cpp,java,bash,swift,powershell,dart,ruby,kotlin&perline=14&theme=light" /></picture>
+<br/><br/>
+<b>Frameworks & libraries</b><br/>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nodejs,react,express,electron,fastapi,flutter,nextjs,pytorch,sklearn,tailwind,threejs&perline=14&theme=dark" /><img alt="nodejs,react,express,electron,fastapi,flutter,nextjs,pytorch,sklearn,tailwind,threejs" src="https://skillicons.dev/icons?i=nodejs,react,express,electron,fastapi,flutter,nextjs,pytorch,sklearn,tailwind,threejs&perline=14&theme=light" /></picture>
+<br/><br/>
+<b>Databases & cloud</b><br/>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=docker,githubactions,prisma,postgres,sqlite,vercel&perline=14&theme=dark" /><img alt="docker,githubactions,prisma,postgres,sqlite,vercel" src="https://skillicons.dev/icons?i=docker,githubactions,prisma,postgres,sqlite,vercel&perline=14&theme=light" /></picture>
+<br/><br/>
+<b>Tools</b><br/>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=androidstudio,gradle,vite,git,github,vscode,figma,linux,postman&perline=14&theme=dark" /><img alt="androidstudio,gradle,vite,git,github,vscode,figma,linux,postman" src="https://skillicons.dev/icons?i=androidstudio,gradle,vite,git,github,vscode,figma,linux,postman&perline=14&theme=light" /></picture>
 <!--STACK:END-->
 
 <sub>Detected automatically from the languages, dependencies and config files in my repositories.</sub>
@@ -27,7 +37,12 @@ _Generating…_
 ### 🔭 Recent activity
 
 <!--ACTIVITY:START-->
-_Generating…_
+- ⬆️ Pushed to [chandhim/chandhim](https://github.com/chandhim/chandhim) <sub>· Nov 18</sub>
+- 🔀 Merged PR [#2](https://github.com/chandhim/chandhim/pull/2) in [chandhim/chandhim](https://github.com/chandhim/chandhim) <sub>· Nov 18</sub>
+- 🔃 Opened PR [#2](https://github.com/chandhim/chandhim/pull/2) in [chandhim/chandhim](https://github.com/chandhim/chandhim) <sub>· Nov 18</sub>
+- ⬆️ Pushed to [chandhim/chandhim](https://github.com/chandhim/chandhim) <sub>· Nov 17</sub>
+- 🔀 Merged PR [#2](https://github.com/chandhim/UniWiz_Parttime/pull/2) in [chandhim/UniWiz_Parttime](https://github.com/chandhim/UniWiz_Parttime) <sub>· Nov 18</sub>
+- 🔃 Opened PR [#2](https://github.com/chandhim/UniWiz_Parttime/pull/2) in [chandhim/UniWiz_Parttime](https://github.com/chandhim/UniWiz_Parttime) <sub>· Nov 18</sub>
 <!--ACTIVITY:END-->
 
 <picture>
